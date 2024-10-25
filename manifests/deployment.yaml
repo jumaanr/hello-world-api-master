@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-api-master
+spec:
+  replicas: 3  # Three replicas of the application running on the single Minikube node
+  selector:
+    matchLabels:
+      app: hello-world-api-master
+  template:
+    metadata:
+      labels:
+        app: hello-world-api-master
+    spec:
+      containers:
+      - name: hello-world-api
+        image: hello-world-api:latest
+        imagePullPolicy: IfNotPresent  # Use local image if already present
+        ports:
+        - containerPort: 3000  # The internal container port your app listens to
