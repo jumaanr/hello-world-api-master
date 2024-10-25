@@ -67,9 +67,6 @@ This repository contains the **Hello World API**, a simple application designed 
 - **Operating System**: Ubuntu 20.04 LTS
 - **Environment**: Virtual Machine
 - **Resources**: 4 vCPUs, 8 GB RAM
-- **Network Configuration**:
-  - **Server IP Address**: 10.0.0.100/24
-  - **Gateway**: 10.0.0.1
 
 These specifications were used to test and deploy the application, providing sufficient resources for application performance and Kubernetes cluster management.
 
